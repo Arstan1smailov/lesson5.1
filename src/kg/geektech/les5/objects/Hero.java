@@ -3,7 +3,7 @@ package kg.geektech.les5.objects;
 public class Hero {
     private int Hp;
     private int Attack;
-    private String ultimate;
+    private String Ultimate;
    public Hero (int Hp, int Attack, String ultimate){
        if (Hp < 0){
            System.out.println("Wrong value");
@@ -17,6 +17,7 @@ public class Hero {
        else{
            this.Attack = Attack;
        }
+       this.Ultimate = ultimate;
    }
     public Hero (int Hp, int Attack){
         if (Hp < 0){
@@ -33,12 +34,12 @@ public class Hero {
         }
     }
     public int getHp(){
-       return getHp();
+       return Hp;
     }
     public int getAttack(){
-        return getAttack();
+        return Attack;
     }public String getUltimate(){
-        return getUltimate();
+        return Ultimate;
     }
 
 }
